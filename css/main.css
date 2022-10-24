@@ -292,7 +292,8 @@ footer section {
 #benefits > .row:first-child {
         margin-top: 110px;
 }
-td {
+td,
+th {
         border-left: #E0DFE1 1px solid;
 }
 table,
@@ -300,6 +301,7 @@ table tbody td{
         border: #E0DFE1 1px solid;
 }
 table {
+        margin-top: 30px;
         border-collapse: collapse;
 }
 
