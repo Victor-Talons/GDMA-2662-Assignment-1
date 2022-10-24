@@ -109,9 +109,10 @@ main ul {
         padding-left: 10px;
         margin-bottom: 60px;
 }
-header li,
-footer li {
+header nav li,
+footer nav:last-child li {
         list-style: none;
+        display: inline-block;
 }
 footer span {
         font-size: 14px;
@@ -202,6 +203,7 @@ header b {
 
 
 /* ----- CONTENT ----- */
+
 header .bg-image {
         background: url(../img/macbook-pro.jpg) no-repeat;
         background-position: center;
@@ -235,7 +237,7 @@ main .row section {
 #benefits .col-3  {
         width: 320px;
 } 
-.pos-rel > span {
+#pos-rel > span {
         position: absolute;
         top: -20px;
         left: -25px;
@@ -244,7 +246,7 @@ main .row section {
 button {
         color: #FFFFFF;
         background: #FE8360;
-        padding: 19px 21px; 
+        padding: 10px 21px; 
         text-decoration: none;
         transition: 0.8s;
 }
@@ -354,25 +356,43 @@ thead tr:first-child th {
         font-weight: 700;
         font-size: 75px;
 }
-
+thead tr:nth-child(2) th {
+        padding-bottom: 27px;
+}
+thead tr:last-child th {
+        padding-bottom: 60px;
+}
+thead .btn {
+        background: #51CCF8;
+}
+th p {
+        font-weight: 700;
+        font-size: 16px;
+      
+        text-transform: uppercase;
+        width: 280px;
+        font-family: 'Lato', sans-serif;
+        margin: 0 auto;
+}
+tfoot .btn {
+        font-weight: 700;
+        font-size: 16px;
+       
+        text-transform: uppercase;
+        width: 280px;
+        font-family: 'Lato', sans-serif;
+        margin: 0 auto;
+}
+thead tr:last-child th {
+        font-weight: 400;
+}
 tbody td,
 tfoot td {
         padding: 15px 70px;
         text-align: center;
 }
-tbody .btn {
-        background-color: #51CCF8;
-        padding: 10px 40px;
-}
-thead tr:last-child th {
-        font-weight: 400;
-}
-tbody .btn:hover {
-        background: #304A71;
-
-}
 tfoot .btn {
-        padding: 10px 70px;
+        padding: 10px 111px;
 }
 
 
@@ -386,7 +406,7 @@ tfoot .btn {
 .col-3 {
         width: 400px;
 }
-.pos-rel {
+#pos-rel {
         position: relative;
         top: 0;
         left: 0;
