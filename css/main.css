@@ -1,0 +1,378 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------------------
+    TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors, Lists
+        - Content
+        - Ids 
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Content
+                - Group selectors
+                - #header
+                - #Flex-box
+                - #Container
+                - #Axis
+                - #Items
+                - Footersss
+        
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+        - Screenreader	
+        - Color    
+        - Margin
+--------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+    3.0 - GENERIC
+-------------------------------------------------------------- */
+
+/* ----- UNIVERSAL ----- */
+* {
+       
+
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+html {
+        font-family: 'Source Sans Pro';
+
+}
+
+/*--------------------------------------------------------------
+    4.0 - ELEMENTS
+-------------------------------------------------------------- */
+
+
+
+/* ----- TYPOGRAPHY ----- */ 
+h1 {
+        color: #fff;
+}
+p,
+ul {
+        font-size: 16px;
+        line-height: 25px;
+}
+header nav {
+        margin-top: 30px;
+}
+header nav a {
+        width: 114px;
+        height: 49px;
+        color: #FFFFFF;
+        background: #FE8360;
+        padding: 15px 20px;    
+        text-decoration: none;    
+}
+header ul,
+footer ul {
+        padding-left: 0px;
+        margin-top: 0px;
+}
+main ul {
+        padding-left: 10px;
+        margin-bottom: 60px;
+}
+header li,
+footer li {
+        list-style: none;
+}
+footer span {
+        font-size: 14px;
+        color: #B6BCC7;
+}
+footer a {
+        color: #FFF;
+        text-decoration: none;
+}
+span {
+        font-weight: 200;
+        font-size: 75px;
+}
+[class*="fa"]  {
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 50px;
+        text-transform: uppercase;
+        color: #FE8360;
+}
+p,
+h1 {
+        margin: 0px;
+}
+h3 {
+        margin-top: 0px;
+}
+h4 {
+        margin-bottom: 0px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+}
+b {
+        font-weight: 600;
+        font-size: 14px;
+}
+
+
+
+
+
+
+
+/* ----- CONTENT ----- */
+
+
+
+
+/* ----- LISTS ----- */
+
+
+
+/* ----- ANCHOR ----- */
+
+
+
+/*--------------------------------------------------------------
+    5.0 - OBJECTS
+-------------------------------------------------------------- */
+
+/* ----- FRAMEWORK ----- */
+
+.wrapper {
+        width: 1024px;
+}
+
+.wrapper {
+        margin: 0 auto;
+}
+.row {
+        display: flex;
+        justify-content: space-between;
+}
+
+
+/*--------------------------------------------------------------
+    6.0 - COMPONENTS
+-------------------------------------------------------------- */
+
+/* ----- NAV ----- */
+
+
+
+
+/* ----- CONTENT ----- */
+header .bg-image {
+        background: url(../img/macbook-pro.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+        margin-bottom: 60px;
+}
+header .bg-image .wrapper,
+header  .hero-blue .wrapper,
+header .hero-orange .wrapper{
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 240px;
+        padding-bottom: 50px;
+}
+header  .hero-blue .wrapper,
+header .hero-orange .wrapper {
+        text-align: left;
+}
+main .bg-image {
+        background: url(../img/windows.jpg) no-repeat;
+        background-size: cover;
+        width: 400px;
+        height: 395px;
+}
+main .row section {
+        width: 550px;
+        margin-bottom: 70px;
+}
+.pos-rel > span {
+        position: absolute;
+        top: -20px;
+        left: -25px;
+}
+.btn,
+button {
+        width: 195px;
+        height: 49px;
+        color: #FFFFFF;
+        background: #FE8360;
+        padding: 19px 20px; 
+        text-decoration: none;
+        transition: 0.8s;
+}
+.btn:hover,
+button:hover {
+        background-color: #51CCF8;
+}
+.col-3 div:last-child {
+        width: 250px;
+}
+footer [class*="fa"] {
+        font-size: 14px;
+        color: #B6BCC7;
+}
+footer > .row {
+        justify-content: flex-start;
+        margin-top: 70px;
+}
+footer {
+        background-color: #4D515C;
+        color: #FFFFFF;
+}
+footer p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 155.7%;
+}
+footer section {
+        margin-left: 70px;
+}
+
+
+
+
+
+
+
+
+
+.hero-blue {
+        /* padding: 200px 0px 20px 0px; */
+        background-color: #51CCF8;
+        text-align: left;
+}
+#benefits > .row:first-child {
+        margin-top: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-orange {
+        /* padding: 200px 0px 20px 0px; */
+        background-color: #FE8360;
+        text-align: left;
+}
+#form {
+        background-color: #E7F5F8;
+        padding: 70px;
+}
+select,
+button {
+        width: 200px;
+        height: 49px;
+}
+input  {
+        width: 420px;
+        height: 49px;
+}
+table {
+        margin: 0 auto;
+}
+thead tr:first-child th {
+        font-weight: 700;
+        font-size: 75px;
+}
+
+tbody td,
+tfoot td {
+        padding: 15px 70px;
+        text-align: center;
+}
+tbody .btn {
+        background-color: #51CCF8;
+        padding: 10px 40px;
+}
+thead tr:last-child th {
+        font-weight: 400;
+}
+tbody .btn:hover {
+        background: #304A71;
+
+}
+tfoot .btn {
+        padding: 10px 70px;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+    7.0 - UTILITY
+-------------------------------------------------------------- */
+.col-3 {
+        width: 400px;
+}
+.pos-rel {
+        position: relative;
+        top: 0;
+        left: 0;
+}
+/* ----- SCREENREADER ----- */
+.sr-only {
+        position: absolute;
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0,0,0,0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
+/* 
+
+  /* ----- COLOR ----- */
+
+
+  /* ----- UNIVERSAL ----- */
+
+ 
