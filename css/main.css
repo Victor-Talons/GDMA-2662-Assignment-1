@@ -64,11 +64,30 @@ html {
 /* ----- TYPOGRAPHY ----- */ 
 h1 {
         color: #fff;
+        font-weight: 700;
+        font-size: 50px;
+}
+h1 + p,
+.hero-orange p,
+.hero-blue p {
+        font-weight: 300;
+        font-size: 30px;
 }
 p,
 ul {
         font-size: 16px;
         line-height: 25px;
+}
+header a {
+        font-weight: 400;
+        font-size: 18px;
+        color: #3F3C45;
+        text-decoration: none;
+        text-align: left;
+}
+header .row p:first-child {
+        text-align: left;
+        margin-left: 45px;
 }
 header nav {
         margin-top: 30px;
@@ -129,6 +148,10 @@ h4 {
 b {
         font-weight: 600;
         font-size: 14px;
+}
+header b {
+        font-weight: 700;
+        font-size: 18px;
 }
 
 
@@ -209,6 +232,9 @@ main .row section {
         width: 550px;
         margin-bottom: 70px;
 }
+#benefits .col-3  {
+        width: 320px;
+} 
 .pos-rel > span {
         position: absolute;
         top: -20px;
@@ -216,11 +242,9 @@ main .row section {
 }
 .btn,
 button {
-        width: 195px;
-        height: 49px;
         color: #FFFFFF;
         background: #FE8360;
-        padding: 19px 20px; 
+        padding: 19px 21px; 
         text-decoration: none;
         transition: 0.8s;
 }
@@ -243,7 +267,7 @@ footer {
         background-color: #4D515C;
         color: #FFFFFF;
 }
-footer p {
+footer li {
         font-weight: 400;
         font-size: 14px;
         line-height: 155.7%;
