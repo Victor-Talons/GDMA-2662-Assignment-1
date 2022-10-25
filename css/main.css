@@ -81,81 +81,155 @@ h2 span,
 #form {
         font-weight: 300;
 }
-
-
-/* ----- TYPOGRAPHY ----- */ 
-h1,
-.bg-image p {
-        color: #fff;
-        font-weight: 700;
+table span {
+        font-weight: 200;
+}
+footer b,
+footer li {
+        font-size: 14px;
+}
+td,
+p,
+.btn,
+b {
+        font-size: 16px;
+}
+header b, 
+header li,
+#form span,
+.col-3 h2,
+header h2 span,
+h3 {
+        font-size: 18px;
+}
+h1 span,
+header span {
+        font-size: 30px;
+}
+h2 {
+        font-size: 35px;
+}
+.bg-image p,
+h1{
         font-size: 50px;
 }
-.bg-image p span {
-        font-weight: 300;
-        font-size: 30px;
-        line-height: 55px;
+th {
+        font-size: 25px;
 }
-h1 span {
-        font-weight: 300;
-        font-size: 30px;
+thead tr:first-child th,
+table span{
+        font-size: 75px;
+}
+footer li,
+header nav li,
+footer section:last-child li {
+        list-style: none;
+}
+header a,
+header nav a,
+footer a,
+.btn,
+button {
+        text-decoration: none;
+}
+header a {
+        color: #3F3C45;
+}
+
+h1,
+.bg-image p,
+header nav a,
+footer a,
+.btn,
+button,
+header .bg-image .wrapper,
+header  .hero-blue .wrapper,
+header .hero-orange .wrapper,
+footer  {
+        color: #fff;
+}
+header ul,
+header nav a,
+.hero-orange,
+.btn,
+button {
+        background-color: #FE8360;
+}
+thead .btn,
+.btn:hover,
+button:hover,
+.hero-blue  {
+        background: #51CCF8;
+}
+
+.hero-orange,
+header a,
+header .row p:first-child,
+header  .hero-blue .wrapper,
+header .hero-orange .wrapper,
+.hero-blue,
+h1 {
+        text-align: left;
+}
+h2 span,
+#form,
+thead,
+tfoot tr:last-child,
+.bg-image p  { 
+        text-transform: uppercase;
+}
+
+
+/* ----- TYPOGRAPHY messy ----- */ 
+
+.bg-image p span {
+        line-height: 55px;
 }
 p,
 ul {
-        font-size: 16px;
         line-height: 25px;
 }
-header a {
-        font-weight: 400;
-        font-size: 18px;
-        color: #3F3C45;
-        text-decoration: none;
-        text-align: left;
-}
-header .row p:first-child {
-        text-align: left;
-        margin-left: 45px;
-}
-header nav {
-        margin: 30px 0px 0px ;
-}
+
+
 header nav a {
         width: 114px;
         height: 49px;
-        color: #FFFFFF;
-        background: #FE8360;
         padding: 15px 20px;    
-        text-decoration: none;    
+}
+header ul {
+        padding: 10px 0px;
 }
 header ul,
 footer ul {
         padding-left: 0px;
         margin: 0px;
 }
-header ul {
-        padding: 10px 0px;
-        background-color: #FE8360;
+p,
+h1 {
+        margin: 0px;
 }
+h2,
+h3 {
+        margin-top: 0px;
+}
+header .row p:first-child {
+        margin-left: 45px;
+}
+header nav {
+        margin: 30px 0px 0px ;
+}
+
 main ul {
         padding-left: 10px;
         margin-bottom: 60px;
 }
 header nav li,
 footer section:last-child li {
-        list-style: none;
         display: inline-block;
         
 }
 footer span {
-        font-size: 14px;
         color: #B6BCC7;
-}
-footer a {
-        color: #FFF;
-        text-decoration: none;
-}
-span {
-        font-weight: 200;
-        font-size: 75px;
 }
 [class*="fa"]  {
         font-weight: 900;
@@ -164,40 +238,11 @@ span {
         text-transform: uppercase;
         color: #FE8360;
 }
-p,
-h1 {
-        margin: 0px;
-}
-h2 {
-        margin-top: 0px;
-}
-h3 {
-        margin-top: 0px;
-}
 h3 {
         margin-bottom: 0px;
-        font-weight: 700;
-        font-size: 18px;
         line-height: 23px;
         padding-top: 40px ;
 }
-b {
-        font-weight: 600;
-        font-size: 14px;
-}
-header b {
-        font-weight: 700;
-        font-size: 18px;
-}
-footer li {
-        list-style-type: none;
-}
-
-
-
-
-
-
 
 /* ----- CONTENT ----- */
 
@@ -245,26 +290,31 @@ footer li {
 header .bg-image {
         background: url(../img/macbook-pro.jpg) no-repeat;
         background-position: center;
+        -o-box-background-size: cover;
+        -ms-background-size:cover;
+        -webkit-background-size:cover;
+        -moz-box-background-size: cover;
         background-size: cover;
+
         width: 100%;
-        height: 400px;
+        /* height: 400px; */
         margin-bottom: 60px;
 }
 header .bg-image .wrapper,
 header  .hero-blue .wrapper,
 header .hero-orange .wrapper{
         text-align: center;
-        color: #FFFFFF;
         padding-top: 240px;
         padding-bottom: 50px;
 }
-header  .hero-blue .wrapper,
-header .hero-orange .wrapper {
-        text-align: left;
-}
 main .bg-image {
         background: url(../img/windows.jpg) no-repeat;
+        -o-box-background-size: cover;
+        -ms-background-size:cover;
+        -webkit-background-size:cover;
+        -moz-box-background-size: cover;
         background-size: cover;
+
         width: 400px;
         height: 395px;
 }
@@ -274,14 +324,7 @@ main .bg-image {
 }
 main #form .row section {
         width: 200px;
-        
 }
-main .col-3 {
-        margin-top: 60px;
-}
-#benefits .col-3  {
-        width: 320px;
-} 
 #pos-rel > span {
         position: absolute;
         top: -20px;
@@ -289,18 +332,8 @@ main .col-3 {
 }
 .btn,
 button {
-        color: #FFFFFF;
-        background: #FE8360;
         padding: 10px 21px; 
-        text-decoration: none;
         transition: 0.8s;
-}
-.btn:hover,
-button:hover {
-        background-color: #51CCF8;
-}
-.col-3 div:last-child {
-        width: 250px;
 }
 footer [class*="fa"] {
         font-size: 14px;
@@ -312,12 +345,9 @@ footer > .row {
 }
 footer {
         background-color: #4D515C;
-        color: #FFFFFF;
         padding-bottom: 50px;
 }
 footer li {
-        font-weight: 400;
-        font-size: 14px;
         line-height: 155.7%;
 }
 footer section {
@@ -326,19 +356,8 @@ footer section {
 
 
 
-
-
-
-
-
-
 .hero-blue {
-        background-color: #51CCF8;
-        text-align: left;
         margin-bottom: 90px;
-}
-#benefits > .row:first-child {
-        margin-top: 110px;
 }
 td,
 th {
@@ -355,33 +374,6 @@ table {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.hero-orange {
-        /* padding: 200px 0px 20px 0px; */
-        background-color: #FE8360;
-        text-align: left;
-}
 #form {
         background-color: #E7F5F8;
         padding: 70px;
@@ -396,18 +388,7 @@ input  {
         width: 420px;
         height: 49px;
 }
-#form span {
-        font-weight: 900;
-        font-size: 20px;
-}
-h2 span {
-        font-weight: 300;
-        font-size: 18px;
-        text-transform: capitalize;
-}
-#form  {
-        text-transform: capitalize;
-}
+
 
 
 
@@ -417,19 +398,14 @@ h2 span {
 table {
         margin: 0 auto;
 }
-thead tr:first-child th {
-        font-weight: 700;
-        font-size: 75px;
-}
+
 thead tr:nth-child(2) th {
         padding-bottom: 27px;
 }
 thead tr:last-child th {
         padding-bottom: 60px;
 }
-thead .btn {
-        background: #51CCF8;
-}
+
 thead .btn,
 tfoot .btn {
         font-family: 'Lato', sans-serif;
@@ -444,61 +420,18 @@ tfoot a {
         display: inline-block;
         width: 200px;
 }
-thead,
-tfoot tr:last-child {
-        text-transform: uppercase;
-
+.col-3 div:last-child {
+        width: 250px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-th p {
-        font-weight: 700;
-        font-size: 16px;
-      
-        text-transform: uppercase;
-        width: 280px;
-        font-family: 'Lato', sans-serif;
-        margin: 0 auto;
-}
-tfoot .btn {
-        font-weight: 700;
-        font-size: 16px;
-       
-        text-transform: uppercase;
-        width: 280px;
-        font-family: 'Lato', sans-serif;
-        margin: 0 auto;
-}
-thead tr:last-child th {
-        font-weight: 400;
-}
-
-tfoot .btn {
-        padding: 10px 111px;
-} */
-
-
-
-
-
 
 /*--------------------------------------------------------------
     7.0 - UTILITY
 -------------------------------------------------------------- */
 .col-3 {
         width: 330px;
+        margin-top: 60px;
 }
+
 #pos-rel {
         position: relative;
         top: 0;
