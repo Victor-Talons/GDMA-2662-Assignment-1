@@ -7,21 +7,19 @@
 2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
 3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
 4.0 - Elements: styling for bare/generic HTML elements 
-        - Typography: Headings, Paragraphs, Blockquotes, Anchors, Lists
-        - Content
-        - Ids 
+        -- Typography (Headlines, Paragraphs, Lists, Anchors)
+        -- Tables
+        -- Forms
 5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
         - Framework
 6.0 - Components: specific designed components
-        - Content
-                - Group selectors
-                - #header
-                - #Flex-box
-                - #Container
-                - #Axis
-                - #Items
-                - Footersss
-        
+       -- Hero (for all three pages)
+        -- Nav
+        -- Footer
+        -- pos-rel (may want to name this component more contextually since you're doing more than positioning)
+        -- col-3
+        -- forms    
+
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
         - Screenreader	
         - Color    
@@ -63,8 +61,7 @@ html {
 table th, 
 b,
 h2,
-h3,
-#form span {
+h3 {
         font-weight: 700;
 }
 footer b {
@@ -77,8 +74,7 @@ p {
 }
 h1 span,
 header span,
-h2 span,
-#form {
+h2 span {
         font-weight: 300;
 }
 table span {
@@ -90,14 +86,11 @@ footer li {
 }
 td,
 p,
-.btn,
 b {
         font-size: 16px;
 }
 header b, 
 header li,
-#form span,
-.col-3 h2,
 header h2 span,
 h3 {
         font-size: 18px;
@@ -109,7 +102,6 @@ header span {
 h2 {
         font-size: 35px;
 }
-.bg-image p,
 h1{
         font-size: 50px;
 }
@@ -128,7 +120,6 @@ footer section:last-child li {
 header a,
 header nav a,
 footer a,
-.btn,
 button {
         text-decoration: none;
 }
@@ -137,72 +128,61 @@ header a {
 }
 
 h1,
-.bg-image p,
 header nav a,
-footer a,
-.btn,
 button,
 header .bg-image .wrapper,
 header  .hero-blue .wrapper,
 header .hero-orange .wrapper,
-footer  {
+footer a:hover,
+footer,
+footer [class*="fa"]:hover {
         color: #fff;
 }
 header ul,
 header nav a,
-.hero-orange,
-.btn,
 button {
         background-color: #FE8360;
 }
 thead .btn,
-.btn:hover,
-button:hover,
-.hero-blue  {
+button:hover {
         background: #51CCF8;
 }
-
-.hero-orange,
 header a,
 header .row p:first-child,
 header  .hero-blue .wrapper,
 header .hero-orange .wrapper,
-.hero-blue,
 h1 {
         text-align: left;
 }
 h2 span,
-#form,
 thead,
 tfoot tr:last-child,
-.bg-image p  { 
+h2,
+h1  { 
         text-transform: uppercase;
 }
 
 
+
+p,
+h2 {
+        color: #3F3C45;
+
+}
 /* ----- TYPOGRAPHY messy ----- */ 
 
-.bg-image p span {
-        line-height: 55px;
+header nav li,
+footer section:last-child li {
+        display: inline-block;
+        
+}
+footer span,
+footer a {
+        color: #B6BCC7;
 }
 p,
 ul {
         line-height: 25px;
-}
-
-
-header nav a {
-        width: 114px;
-        height: 49px;
-        padding: 15px 20px;    
-}
-header ul {
-        padding: 10px 0px;
-}
-header ul,
-footer ul {
-        padding-left: 0px;
-        margin: 0px;
 }
 p,
 h1 {
@@ -216,20 +196,14 @@ header .row p:first-child {
         margin-left: 45px;
 }
 header nav {
-        margin: 30px 0px 0px ;
+        margin: 10px 0px 0px;
 }
-
+.bg-image p span {
+        line-height: 55px;
+}
 main ul {
         padding-left: 10px;
-        margin-bottom: 60px;
-}
-header nav li,
-footer section:last-child li {
-        display: inline-block;
-        
-}
-footer span {
-        color: #B6BCC7;
+        margin-bottom: 40px;
 }
 [class*="fa"]  {
         font-weight: 900;
@@ -279,62 +253,33 @@ h3 {
 /*--------------------------------------------------------------
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
+/*      -- Hero (for all three pages)
+        -- Nav
+        -- Footer
+        -- pos-re
 
+        -- acol-3
+        -- forms */
 /* ----- NAV ----- */
-
-
-
-
-/* ----- CONTENT ----- */
-
-header .bg-image {
-        background: url(../img/macbook-pro.jpg) no-repeat;
-        background-position: center;
-        -o-box-background-size: cover;
-        -ms-background-size:cover;
-        -webkit-background-size:cover;
-        -moz-box-background-size: cover;
-        background-size: cover;
-
-        width: 100%;
-        /* height: 400px; */
-        margin-bottom: 60px;
+header a:hover {
+        color: #FE8360;
 }
-header .bg-image .wrapper,
-header  .hero-blue .wrapper,
-header .hero-orange .wrapper{
-        text-align: center;
-        padding-top: 240px;
-        padding-bottom: 50px;
-}
-main .bg-image {
-        background: url(../img/windows.jpg) no-repeat;
-        -o-box-background-size: cover;
-        -ms-background-size:cover;
-        -webkit-background-size:cover;
-        -moz-box-background-size: cover;
-        background-size: cover;
 
-        width: 400px;
-        height: 395px;
+header nav a {
+        width: 114px;
+        height: 49px;
+        padding: 15px 20px;    
 }
-.hosting-body {
-        width: 550px;
-        
+header ul {
+        padding: 8px 0px;
 }
-main #form .row section {
-        width: 200px;
+header ul,
+footer ul {
+        padding-left: 0px;
+        margin: 0px;
 }
-#pos-rel > span {
-        position: absolute;
-        top: -20px;
-        left: -25px;
-}
-.btn,
-button {
-        padding: 10px 21px; 
-        transition: 0.8s;
-}
+
+/* ----- Footer ----- */
 footer [class*="fa"] {
         font-size: 14px;
         color: #B6BCC7;
@@ -354,58 +299,137 @@ footer section {
         margin-left: 70px;
 }
 
+/* ----- POS-RE ----- */
+#pos-rel > span {
+        position: absolute;
+        top: -20px;
+        left: -25px;
+}
 
+/* ----- COL-3 ----- */
+.col-3 h2 {
+        font-size: 18px;
+}
+.col-3 div:last-child {
+        width: 250px;
+}
 
+/* ----- FORMS ----- */
+#form { 
+        text-transform: uppercase;
+}
+#form span {
+        font-weight: 700;
+        font-size: 18px;
+}
+/* ----- HERO ----- */
+header .bg-image .wrapper,
+header  .hero-blue .wrapper,
+header .hero-orange .wrapper{
+        text-align: center;
+        padding-top: 220px;
+        padding-bottom: 50px;
+}
+.hero-orange,
+.hero-blue {
+        text-align: left;
+}
+thead .btn,
+.btn:hover,
+.hero-blue  {
+        background: #51CCF8;
+}
+.hero-orange,
+.btn {
+        background-color: #FE8360;
+}
+.hero-orange,
+.hero-blue,
+h1 {
+        text-align: left;
+}
+.btn [class*="fa"]:hover {
+        color: #fff;
+}
+.bg-image p { 
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #FFF;
+}
+header > .wrapper > div:first-child {
+        height: 70px;
+}
+header .bg-image {
+        background: url(../img/macbook-pro.jpg) no-repeat;
+        background-position: center;
+        -o-box-background-size: cover;
+        -ms-background-size:cover;
+        -webkit-background-size:cover;
+        -moz-box-background-size: cover;
+        background-size: cover;
+
+        width: 100%;
+        /* height: 400px; */
+        margin-bottom: 60px;
+}
+main .bg-image {
+        background: url(../img/windows.jpg) no-repeat;
+        -o-box-background-size: cover;
+        -ms-background-size:cover;
+        -webkit-background-size:cover;
+        -moz-box-background-size: cover;
+        background-size: cover;
+
+        width: 400px;
+        height: 395px;
+}
+.hosting-body {
+        width: 550px;
+}
+.btn {
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+}
+.bg-image p{
+        font-size: 50px;
+}
+button {
+        border: none;
+}
 .hero-blue {
         margin-bottom: 90px;
 }
-td,
-th {
-        border-left: #E0DFE1 1px solid;
-}
-table,
-table tbody td{
-        border: #E0DFE1 1px solid;
-}
-table {
-        margin-top: 30px;
-        border-collapse: collapse;
-}
 
-
-
-#form {
-        background-color: #E7F5F8;
-        padding: 70px;
-}
-
+/* ----- Form ----- */
 select,
 button {
         width: 180px;
         height: 49px;
+        padding: 10px;
+}
+.btn,
+button {
+        padding: 10px 21px; 
+        transition: 0.8s;
+}
+#form {
+        background-color: #E7F5F8;
+        padding: 70px;
+        font-weight: 300;
+}
+main #form .row section {
+        width: 200px;
 }
 input  {
         width: 420px;
         height: 49px;
 }
-
-
-
-
-#table {
-        margin-top: 80px;
+/* ----- Table ----- */
+thead,
+tfoot {
+        padding-top: 20px;
 }
-table {
-        margin: 0 auto;
-}
-
-thead tr:nth-child(2) th {
-        padding-bottom: 27px;
-}
-thead tr:last-child th {
-        padding-bottom: 60px;
-}
-
 thead .btn,
 tfoot .btn {
         font-family: 'Lato', sans-serif;
@@ -420,8 +444,29 @@ tfoot a {
         display: inline-block;
         width: 200px;
 }
-.col-3 div:last-child {
-        width: 250px;
+td,
+th {
+        border-left: #E0DFE1 1px solid;
+}
+#table {
+        margin-top: 80px;
+}
+table {
+        margin: 0 auto;
+}
+thead tr:nth-child(2) th {
+        padding-bottom: 27px;
+}
+thead tr:last-child th {
+        padding-bottom: 60px;
+}
+table tbody td{
+        border-bottom: #E0DFE1 1px solid;
+}
+table {
+        margin-top: 30px;
+        border-collapse: collapse;
+        border: #E0DFE1 1px solid;
 }
 
 /*--------------------------------------------------------------
