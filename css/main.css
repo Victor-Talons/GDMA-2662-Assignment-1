@@ -59,6 +59,28 @@ html {
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
+/* ----- TYPOGRAPHY ----- */ 
+table th, 
+b,
+h2,
+h3,
+#form span {
+        font-weight: 700;
+}
+footer b {
+        font-weight: 600;
+}
+footer li,
+td,
+p {
+        font-weight: 400;
+}
+h1 span,
+header span,
+h2 span,
+#form {
+        font-weight: 300;
+}
 
 
 /* ----- TYPOGRAPHY ----- */ 
