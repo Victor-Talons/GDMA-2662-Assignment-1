@@ -69,6 +69,7 @@ footer b {
 }
 footer li,
 td,
+thead tr:nth-child(2) th,
 p {
         font-weight: 400;
 }
@@ -98,6 +99,7 @@ h3 {
 h1 span,
 header span {
         font-size: 30px;
+        line-height: 0px;
 }
 h2 {
         font-size: 35px;
@@ -112,6 +114,7 @@ thead tr:first-child th,
 table span{
         font-size: 75px;
 }
+
 footer li,
 header nav li,
 footer section:last-child li {
@@ -143,7 +146,6 @@ header nav a,
 button {
         background-color: #FE8360;
 }
-thead .btn,
 button:hover {
         background: #51CCF8;
 }
@@ -162,7 +164,12 @@ h1  {
         text-transform: uppercase;
 }
 
-
+header h2 span {
+        line-height: 0px;
+}
+h2 {
+        line-height: 30px;
+}
 
 p,
 h2 {
@@ -184,6 +191,9 @@ p,
 ul {
         line-height: 25px;
 }
+.bg-image p span {
+        line-height: 55px;
+}
 p,
 h1 {
         margin: 0px;
@@ -196,11 +206,9 @@ header .row p:first-child {
         margin-left: 45px;
 }
 header nav {
-        margin: 10px 0px 0px;
+        margin: 20px 0px 0px;
 }
-.bg-image p span {
-        line-height: 55px;
-}
+
 main ul {
         padding-left: 10px;
         margin-bottom: 40px;
@@ -217,17 +225,11 @@ h3 {
         line-height: 23px;
         padding-top: 40px ;
 }
+form {
+        width: 870px;
+       
+}
 
-/* ----- CONTENT ----- */
-
-
-
-
-/* ----- LISTS ----- */
-
-
-
-/* ----- ANCHOR ----- */
 
 
 
@@ -286,7 +288,7 @@ footer [class*="fa"] {
 }
 footer > .row {
         justify-content: flex-start;
-        margin-top: 70px;
+        margin-top: 90px;
 }
 footer {
         background-color: #4D515C;
@@ -317,10 +319,19 @@ footer section {
 /* ----- FORMS ----- */
 #form { 
         text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 }
 #form span {
         font-weight: 700;
         font-size: 18px;
+}
+#form header {
+        width: 130px;
+}
+#form > .row {
+        align-items: center;
 }
 /* ----- HERO ----- */
 header .bg-image .wrapper,
@@ -370,7 +381,7 @@ header .bg-image {
 
         width: 100%;
         /* height: 400px; */
-        margin-bottom: 60px;
+        margin-bottom: 90px;
 }
 main .bg-image {
         background: url(../img/windows.jpg) no-repeat;
@@ -404,7 +415,7 @@ button {
 /* ----- Form ----- */
 select,
 button {
-        width: 180px;
+        width: 150px;
         height: 49px;
         padding: 10px;
 }
@@ -417,13 +428,22 @@ button {
         background-color: #E7F5F8;
         padding: 70px;
         font-weight: 300;
+       
 }
 main #form .row section {
         width: 200px;
 }
 input  {
-        width: 420px;
+        width: 370px;
         height: 49px;
+}
+input:focus {
+        border: #FE8360 1px solid;
+}
+input:hover,
+select:focus {
+        border: #FE8360 1px solid;
+        outline: 0px;
 }
 /* ----- Table ----- */
 thead,
@@ -448,17 +468,26 @@ td,
 th {
         border-left: #E0DFE1 1px solid;
 }
+thead .btn{
+        padding: 5px 21px;
+}
 #table {
-        margin-top: 80px;
+        margin-top: 90px;
 }
 table {
         margin: 0 auto;
+}
+thead tr:first-child th {
+        padding-top: 30px;
 }
 thead tr:nth-child(2) th {
         padding-bottom: 27px;
 }
 thead tr:last-child th {
         padding-bottom: 60px;
+}
+tfoot tr:last-child td{
+        padding-bottom: 30px;
 }
 table tbody td{
         border-bottom: #E0DFE1 1px solid;
@@ -496,10 +525,5 @@ table {
 	border: 0 !important;
 }
 /* 
-
-  /* ----- COLOR ----- */
-
-
-  /* ----- UNIVERSAL ----- */
 
  
