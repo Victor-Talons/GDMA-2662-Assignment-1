@@ -17,6 +17,7 @@
         -- Nav
         -- Footer
         -- pos-rel (may want to name this component more contextually since you're doing more than positioning)
+        -- col-2
         -- col-3
         -- forms    
 
@@ -58,6 +59,7 @@ html {
 /* ----- TYPOGRAPHY ----- */ 
 table th, 
 b,
+header nav a,
 h2,
 h3 {
         font-weight: 700;
@@ -209,7 +211,7 @@ h2 {
         margin: 0px;
 }
 header .row p:first-child {
-        margin-left: 45px;
+        text-align: right;
 }
 header nav {
         margin: 20px 0px 0px;
@@ -272,8 +274,6 @@ form {
         -- forms */
 /* ----- NAV ----- */
 header nav a {
-        width: 114px;
-        height: 49px;
         padding: 15px 20px;    
         text-transform: uppercase;
         transition: 0.8s;
@@ -290,7 +290,7 @@ footer ul {
         margin: 0px;
 }
 header > .row {
-        margin-top: 50px;
+        margin-top: 30px;
 }
 /* ----- Footer ----- */
 footer [class*="fa"] {
@@ -327,10 +327,22 @@ footer nav {
         font-size: 18px;
 }
 .col-3 div:last-child {
-        width: 250px;
+        width: 220px;
 }
 .col-3 div:first-child {
         width: 50px;
+}
+
+
+/* ----- COL-2 ----- */
+#col-2 section{
+        width: 550px;
+}
+#col-2 {
+        margin-bottom: 30px;
+}
+#col-2 h2 {
+        margin-bottom: 15px;
 }
 
 /* ----- FORMS ----- */
@@ -354,7 +366,7 @@ footer nav {
         align-items: center;
 }
 /* ----- HERO ----- */
-header .bg-image .wrapper,
+
 header  #hero-blue .wrapper,
 header #hero-orange .wrapper{
         text-align: center;
@@ -378,6 +390,11 @@ th p,
 #hero-blue,
 h1 {
         text-align: left;
+}
+header .bg-image .wrapper p {
+        text-align: center;
+        padding-top: 240px;
+        padding-bottom: 50px;
 }
 .btn [class*="fa"]:hover {
         color: #fff;
@@ -422,12 +439,7 @@ main .bg-image {
         width: 400px;
        
 }
-#col-2 section{
-        width: 550px;
-}
-#col-2 {
-        margin-bottom: 30px;
-}
+
 
 .bg-image p{
         font-size: 50px;
@@ -436,7 +448,7 @@ button {
         border: none;
 }
 #hero-blue {
-        margin-bottom: 90px;
+        margin-bottom: 50px;
 }
 
 /* ----- Form ----- */
@@ -524,7 +536,7 @@ table {
         margin: 0 auto;
 }
 thead tr:first-child th {
-        padding-top: 30px;
+        padding-top: 20px;
 }
 thead tr:nth-child(2) th {
         padding-bottom: 27px;
@@ -533,7 +545,7 @@ thead tr:last-child th {
         padding-bottom: 60px;
 }
 tfoot tr:last-child td{
-        padding: 50px 0px 30px;
+        padding: 50px 0px 20px;
 }
 tfoot a {
         text-decoration: none;
