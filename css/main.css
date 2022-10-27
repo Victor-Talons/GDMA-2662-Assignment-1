@@ -128,14 +128,16 @@ button {
 }
 header a {
         color: #3F3C45;
+        transition: 0.8s;
+        
 }
 
 h1,
 header nav a,
 button,
 header .bg-image .wrapper,
-header  .hero-blue .wrapper,
-header .hero-orange .wrapper,
+header  #hero-blue .wrapper,
+header #hero-orange .wrapper,
 footer a:hover,
 footer,
 footer [class*="fa"]:hover {
@@ -151,14 +153,16 @@ button:hover {
 }
 header a,
 header .row p:first-child,
-header  .hero-blue .wrapper,
-header .hero-orange .wrapper,
+header  #hero-blue .wrapper,
+header #hero-orange .wrapper,
 h1 {
         text-align: left;
 }
 h2 span,
 thead,
 tfoot tr:last-child,
+header b,
+button,
 h2,
 h1  { 
         text-transform: uppercase;
@@ -198,9 +202,11 @@ p,
 h1 {
         margin: 0px;
 }
-h2,
 h3 {
         margin-top: 0px;
+}
+h2 {
+        margin: 0px;
 }
 header .row p:first-child {
         margin-left: 45px;
@@ -260,18 +266,17 @@ form {
         -- Nav
         -- Footer
         -- pos-re
-
-        -- acol-3
+        -- col-2
+        -- col-3
         -- forms */
 /* ----- NAV ----- */
-header a:hover {
-        color: #FE8360;
-}
+
 
 header nav a {
         width: 114px;
         height: 49px;
         padding: 15px 20px;    
+        text-transform: uppercase;
 }
 header ul {
         padding: 8px 0px;
@@ -281,11 +286,14 @@ footer ul {
         padding-left: 0px;
         margin: 0px;
 }
-
+header > .row {
+        margin-top: 50px;
+}
 /* ----- Footer ----- */
 footer [class*="fa"] {
         font-size: 14px;
         color: #B6BCC7;
+        margin-right: 15px;
 }
 footer > .row {
         justify-content: flex-start;
@@ -296,7 +304,7 @@ footer {
         padding-bottom: 50px;
 }
 footer li {
-        line-height: 155.7%;
+        line-height: 185.7%;
 }
 footer section {
         margin-left: 70px;
@@ -328,6 +336,9 @@ footer section {
         font-weight: 700;
         font-size: 18px;
 }
+#form h2 span {
+        font-weight: 300;
+}
 #form header {
         width: 130px;
 }
@@ -336,27 +347,27 @@ footer section {
 }
 /* ----- HERO ----- */
 header .bg-image .wrapper,
-header  .hero-blue .wrapper,
-header .hero-orange .wrapper{
+header  #hero-blue .wrapper,
+header #hero-orange .wrapper{
         text-align: center;
-        padding-top: 220px;
+        padding-top: 190px;
         padding-bottom: 50px;
 }
-.hero-orange,
-.hero-blue {
+#hero-orange,
+#hero-blue {
         text-align: left;
 }
 thead .btn,
 .btn:hover,
-.hero-blue  {
+#hero-blue  {
         background: #51CCF8;
 }
-.hero-orange,
+#hero-orange,
 .btn {
         background-color: #FE8360;
 }
-.hero-orange,
-.hero-blue,
+#hero-orange,
+#hero-blue,
 h1 {
         text-align: left;
 }
@@ -393,10 +404,13 @@ main .bg-image {
         background-size: cover;
 
         width: 400px;
-        height: 395px;
+        /* height: 395px; */
 }
-.hosting-body {
+#col-2 section{
         width: 550px;
+}
+#col-2 {
+        margin-bottom: 30px;
 }
 .btn {
         text-decoration: none;
@@ -409,7 +423,7 @@ main .bg-image {
 button {
         border: none;
 }
-.hero-blue {
+#hero-blue {
         margin-bottom: 90px;
 }
 
@@ -425,10 +439,18 @@ button {
         padding: 10px 21px; 
         transition: 0.8s;
 }
+select,
+input {
+        padding: 10px;
+}
+select {
+        color: rgba(63, 60, 69, 0.5);
+}
 #form {
         background-color: #E7F5F8;
         padding: 70px;
         font-weight: 300;
+        margin-bottom: 90px;
        
 }
 main #form .row section {
@@ -438,6 +460,7 @@ input  {
         width: 370px;
         height: 49px;
 }
+
 input:focus {
         border: #FE8360 1px solid;
 }
@@ -468,6 +491,7 @@ tfoot a {
 td,
 th {
         border-left: #E0DFE1 1px solid;
+        color: #3F3C45;
 }
 thead .btn{
         padding: 5px 21px;
@@ -488,10 +512,24 @@ thead tr:last-child th {
         padding-bottom: 60px;
 }
 tfoot tr:last-child td{
-        padding-bottom: 30px;
+        padding: 50px 0px 30px;
+}
+tfoot a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+        padding: 15px 20px;
+        background-color: #FE8360;
+        transition: 0.8s;
+}
+tfoot a:hover {
+        background-color: #51CCF8;
 }
 table tbody td{
         border-bottom: #E0DFE1 1px solid;
+}
+table tbody tr:last-child td {
+        border-bottom: none;
 }
 table {
         margin-top: 30px;
@@ -503,7 +541,7 @@ table {
     7.0 - UTILITY
 -------------------------------------------------------------- */
 .col-3 {
-        width: 330px;
+        width: 320px;
         margin-top: 60px;
 }
 
