@@ -364,7 +364,7 @@ footer a {
         width: 130px;
 }
 #form > .row {
-        align-items: center;
+        align-items: flex-end;
 }
 
 /* ----- HERO ----- */
