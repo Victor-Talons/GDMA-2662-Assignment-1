@@ -129,7 +129,9 @@ button {
 header a {
         color: #3F3C45;
         transition: 0.8s;
-        
+}
+header p a:hover {
+        color: #FE8360;
 }
 
 h1,
@@ -161,8 +163,8 @@ h1 {
 h2 span,
 thead,
 tfoot tr:last-child,
-header b,
 button,
+h3,
 h2,
 h1  { 
         text-transform: uppercase;
@@ -306,8 +308,9 @@ footer {
 footer li {
         line-height: 185.7%;
 }
-footer section {
-        margin-left: 70px;
+footer section,
+footer nav {
+        margin-right: 70px;
 }
 
 /* ----- POS-RE ----- */
@@ -357,7 +360,7 @@ header #hero-orange .wrapper{
 #hero-blue {
         text-align: left;
 }
-thead .btn,
+th p,
 .btn:hover,
 #hero-blue  {
         background: #51CCF8;
@@ -373,6 +376,14 @@ h1 {
 }
 .btn [class*="fa"]:hover {
         color: #fff;
+}
+.btn {
+        font-weight: 700;
+        text-transform: uppercase;
+        
+}
+main .btn {
+        font-family: 'Lato', sans-serif;
 }
 .bg-image p { 
         text-transform: uppercase;
@@ -412,11 +423,7 @@ main .bg-image {
 #col-2 {
         margin-bottom: 30px;
 }
-.btn {
-        text-decoration: none;
-        font-size: 16px;
-        color: #fff;
-}
+
 .bg-image p{
         font-size: 50px;
 }
@@ -436,8 +443,10 @@ button {
 }
 .btn,
 button {
-        padding: 10px 21px; 
+        padding: 10px 21px;
+        color: #FFF;
         transition: 0.8s;
+        text-decoration: none;
 }
 select,
 input {
@@ -493,7 +502,14 @@ th {
         border-left: #E0DFE1 1px solid;
         color: #3F3C45;
 }
-thead .btn{
+/* thead .btn{
+        padding: 5px 21px;
+} */
+th p {
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 700;
         padding: 5px 21px;
 }
 #table {
