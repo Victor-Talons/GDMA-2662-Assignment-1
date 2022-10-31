@@ -71,9 +71,6 @@ h2,
 h3 {
         font-weight: 700;
 }
-footer b {
-        font-weight: 600;
-}
 footer li,
 td,
 thead tr:nth-child(2) th,
@@ -85,9 +82,7 @@ header span,
 h2 span {
         font-weight: 300;
 }
-table span {
-        font-weight: 200;
-}
+
  /* --- font-size --- */ 
 
 footer b,
@@ -126,13 +121,10 @@ table span{
  /* --- style --- */ 
 
 footer li,
-header nav li,
-footer section:last-child li {
+header nav li {
         list-style: none;
 }
-header a,
-header nav a,
-footer a,
+ a,
 button {
         text-decoration: none;
 }
@@ -148,8 +140,8 @@ h1,
 header nav a,
 button,
 header .bg-image .wrapper,
-header  #hero-blue .wrapper,
-header #hero-orange .wrapper,
+#hero-blue .wrapper, /* <!-- get rid of ALL CLASS and ID --> */
+#hero-orange .wrapper,
 footer a:hover,
 footer,
 footer [class*="fa"]:hover {
@@ -189,14 +181,7 @@ h2 {
         color: #3F3C45;
 
 }
-[class*="fa"]  {
-        font-weight: 900;
-        font-size: 50px;
-        line-height: 50px;
-        text-transform: uppercase;
-        color: #FE8360;
-        width: 50px;
-}
+
 
 form {
         width: 870px;
@@ -236,11 +221,7 @@ h2 {
 header nav {
         margin: 20px 0px 0px;
 }
-main ul {
-        padding-left: 10px;
-        margin-bottom: 40px;
-        margin: 0px 0px 40px 0px;
-}
+
 
 
 
@@ -267,6 +248,11 @@ main ul {
 -------------------------------------------------------------- */
 
 /* ----- NAV ----- */
+main ul { 
+        padding-left: 10px;
+        margin-bottom: 40px;
+        margin: 0px 0px 40px 0px;
+}
 header nav a {
         padding: 15px 20px;    
         text-transform: uppercase;
@@ -282,6 +268,7 @@ header ul,
 footer ul {
         padding-left: 0px;
         margin: 0px;
+        font-style: normal;
 }
 header > .row {
         margin-top: 30px;
@@ -290,6 +277,14 @@ header .row p:first-child {
         text-align: right;
 }
 /* ----- Footer ----- */
+footer span,
+footer a {
+        color: #B6BCC7;
+}
+footer section,
+footer nav {
+        margin-right: 70px;
+}
 footer [class*="fa"] {
         font-size: 14px;
         color: #B6BCC7;
@@ -307,13 +302,10 @@ footer {
 footer li {
         line-height: 185.7%;
 }
-footer section,
-footer nav {
-        margin-right: 70px;
-}
-footer span,
-footer a {
-        color: #B6BCC7;
+
+
+footer b { 
+        font-weight: 600;
 }
 
 /* ----- POS-RE ----- */
@@ -322,19 +314,26 @@ footer a {
         top: -20px;
         left: -25px;
 }
-
+#pos-rel { 
+        position: relative;
+        top: 0;
+        left: 0;
+}
 /* ----- COL-3 ----- */
 .col-3 h2 {
         font-size: 18px;
 }
 .col-3 div:last-child {
-        width: 220px;
+        width: 230px;
 }
 .col-3 div:first-child {
         width: 50px;
+        text-align: center;
 }
-
-
+.col-3 {
+        width: 320px;
+        margin-top: 60px;
+}
 /* ----- COL-2 ----- */
 #col-2 section{
         width: 550px;
@@ -369,10 +368,10 @@ footer a {
 
 /* ----- HERO ----- */
 
-header  #hero-blue .wrapper,
-header #hero-orange .wrapper{
+header  #hero-blue ,
+header #hero-orange { 
         text-align: center;
-        padding-top: 190px;
+        padding-top: 170px;
         padding-bottom: 50px;
 }
 #hero-orange,
@@ -398,17 +397,8 @@ header .bg-image .wrapper p {
         padding-top: 240px;
         padding-bottom: 50px;
 }
-.btn [class*="fa"]:hover {
-        color: #fff;
-}
-.btn {
-        font-weight: 700;
-        text-transform: uppercase;
-        
-}
-main .btn {
-        font-family: 'Lato', sans-serif;
-}
+
+
 .bg-image p { 
         text-transform: uppercase;
         font-weight: 700;
@@ -454,7 +444,7 @@ button {
 }
 
 /* ----- Form ----- */
-select,
+select, /* <!-- Make sure to differentaite between the elments of the form and the componets of the form --> */
 button {
         width: 150px;
         height: 49px;
@@ -476,7 +466,7 @@ select {
 }
 #form {
         background-color: #E7F5F8;
-        padding: 70px 0px;
+        padding: 50px 0px 70px 0px;
         font-weight: 300;
         margin-bottom: 90px;
        
@@ -528,8 +518,8 @@ th p {
         font-weight: 700;
         padding: 5px 21px;
 }
-#table {
-        margin-top: 90px;
+table span {
+        font-weight: 200;
 }
 table {
         margin: 0 auto;
@@ -572,16 +562,27 @@ table {
 /*--------------------------------------------------------------
     7.0 - UTILITY
 -------------------------------------------------------------- */
-.col-3 {
-        width: 320px;
-        margin-top: 60px;
+[class*="fa"]  { 
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 50px;
+        text-transform: uppercase;
+        color: #FE8360;
+        width: 50px;
+}
+.btn [class*="fa"]:hover { 
+        color: #fff;
+}
+.btn {
+        font-weight: 700;
+        text-transform: uppercase;
+        
+}
+main .btn {
+        font-family: 'Lato', sans-serif;
+        display: inline-block;
 }
 
-#pos-rel {
-        position: relative;
-        top: 0;
-        left: 0;
-}
 /* ----- SCREENREADER ----- */
 .sr-only {
         position: absolute;
