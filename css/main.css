@@ -60,7 +60,114 @@ html {
 /*--------------------------------------------------------------
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
+/* ----- Form ----- */
+select, 
+button {
+        width: 150px;
+        height: 49px;
+        padding: 10px;
+}
+button {
+        padding: 10px 21px;
+        color: #FFF;
+        transition: 0.8s;
+        text-decoration: none;
+}
 
+input {
+        padding: 10px;
+}
+select {
+        color: rgba(63, 60, 69, 0.5);
+}
+
+main #form .row section {
+        width: 200px;
+}
+input  {
+        width: 370px;
+        height: 49px;
+}
+
+input:focus {
+        border: #FE8360 1px solid;
+}
+input:hover,
+select:focus {
+        border: #FE8360 1px solid;
+        outline: 0px;
+}
+/* ----- Table ----- */
+thead,
+tfoot {
+        padding-top: 20px;
+}
+thead .btn,
+tfoot .btn {
+        font-family: 'Lato', sans-serif;
+}
+tbody td,
+tfoot td {
+        padding: 15px 0px;
+        text-align: center;
+}
+
+tfoot a {
+        display: inline-block;
+        width: 200px;
+}
+td,
+th {
+        border-left: #E0DFE1 1px solid;
+        color: #3F3C45;
+}
+th p {
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 700;
+        padding: 5px 21px;
+}
+table span {
+        font-weight: 200;
+}
+table {
+        margin: 0 auto;
+}
+thead tr:first-child th {
+        padding-top: 20px;
+}
+thead tr:nth-child(2) th {
+        padding-bottom: 27px;
+}
+thead tr:last-child th {
+        padding: 20px 20px 60px;
+}
+tfoot tr:last-child td{
+        padding: 50px 0px 20px;
+}
+tfoot a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+        padding: 15px 20px;
+        background-color: #FE8360;
+        transition: 0.8s;
+}
+tfoot a:hover {
+        background-color: #51CCF8;
+}
+table tbody td{
+        border-bottom: #E0DFE1 1px solid;
+}
+table tbody tr:last-child td {
+        border-bottom: none;
+}
+table {
+        margin-top: 30px;
+        border-collapse: collapse;
+        border: #E0DFE1 1px solid;
+}
 /* ----- TYPOGRAPHY ----- */ 
 
  /* --- font-weight --- */ 
@@ -140,8 +247,6 @@ h1,
 header nav a,
 button,
 header .bg-image .wrapper,
-#hero-blue .wrapper, /* <!-- get rid of ALL CLASS and ID --> */
-#hero-orange .wrapper,
 footer a:hover,
 footer,
 footer [class*="fa"]:hover {
@@ -157,8 +262,6 @@ button:hover {
 }
 header a,
 header .row p:first-child,
-header  #hero-blue .wrapper,
-header #hero-orange .wrapper,
 h1 {
         text-align: left;
 }
@@ -365,14 +468,27 @@ footer b {
 #form > .row {
         align-items: flex-end;
 }
+#form {
+        background-color: #E7F5F8;
+        padding: 50px 0px 70px 0px;
+        font-weight: 300;
+        margin-bottom: 90px; 
+}
+.btn {
+        padding: 10px 21px;
+        color: #FFF;
+        transition: 0.8s;
+        text-decoration: none;
+}
 
 /* ----- HERO ----- */
 
 header  #hero-blue ,
 header #hero-orange { 
-        text-align: center;
         padding-top: 170px;
         padding-bottom: 50px;
+        text-align: left;
+        color: #fff;
 }
 #hero-orange,
 #hero-blue {
@@ -392,6 +508,7 @@ th p,
 h1 {
         text-align: left;
 }
+
 header .bg-image .wrapper p {
         text-align: center;
         padding-top: 240px;
@@ -421,7 +538,7 @@ header .bg-image {
         margin-bottom: 90px;
 }
 main .bg-image {
-        background: url(../img/home-woman.jpg) no-repeat;
+        background: url(../img/Woman-comupter.jpg) no-repeat;
         -o-box-background-size: cover;
         -ms-background-size:cover;
         -webkit-background-size:cover;
@@ -443,121 +560,7 @@ button {
         margin-bottom: 50px;
 }
 
-/* ----- Form ----- */
-select, /* <!-- Make sure to differentaite between the elments of the form and the componets of the form --> */
-button {
-        width: 150px;
-        height: 49px;
-        padding: 10px;
-}
-.btn,
-button {
-        padding: 10px 21px;
-        color: #FFF;
-        transition: 0.8s;
-        text-decoration: none;
-}
 
-input {
-        padding: 10px;
-}
-select {
-        color: rgba(63, 60, 69, 0.5);
-}
-#form {
-        background-color: #E7F5F8;
-        padding: 50px 0px 70px 0px;
-        font-weight: 300;
-        margin-bottom: 90px;
-       
-}
-main #form .row section {
-        width: 200px;
-}
-input  {
-        width: 370px;
-        height: 49px;
-}
-
-input:focus {
-        border: #FE8360 1px solid;
-}
-input:hover,
-select:focus {
-        border: #FE8360 1px solid;
-        outline: 0px;
-}
-/* ----- Table ----- */
-thead,
-tfoot {
-        padding-top: 20px;
-}
-thead .btn,
-tfoot .btn {
-        font-family: 'Lato', sans-serif;
-}
-tbody td,
-tfoot td {
-        padding: 15px 0px;
-        text-align: center;
-}
-th p,
-tfoot a {
-        display: inline-block;
-        width: 200px;
-}
-td,
-th {
-        border-left: #E0DFE1 1px solid;
-        color: #3F3C45;
-}
-th p {
-        text-decoration: none;
-        font-size: 16px;
-        color: #fff;
-        font-weight: 700;
-        padding: 5px 21px;
-}
-table span {
-        font-weight: 200;
-}
-table {
-        margin: 0 auto;
-}
-thead tr:first-child th {
-        padding-top: 20px;
-}
-thead tr:nth-child(2) th {
-        padding-bottom: 27px;
-}
-thead tr:last-child th {
-        padding-bottom: 60px;
-}
-tfoot tr:last-child td{
-        padding: 50px 0px 20px;
-}
-tfoot a {
-        text-decoration: none;
-        font-size: 16px;
-        color: #fff;
-        padding: 15px 20px;
-        background-color: #FE8360;
-        transition: 0.8s;
-}
-tfoot a:hover {
-        background-color: #51CCF8;
-}
-table tbody td{
-        border-bottom: #E0DFE1 1px solid;
-}
-table tbody tr:last-child td {
-        border-bottom: none;
-}
-table {
-        margin-top: 30px;
-        border-collapse: collapse;
-        border: #E0DFE1 1px solid;
-}
 
 /*--------------------------------------------------------------
     7.0 - UTILITY
